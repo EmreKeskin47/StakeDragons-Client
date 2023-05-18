@@ -1,0 +1,70 @@
+.spin-animation {
+    animation: spin-dragon 0.8s linear infinite;
+}
+
+@keyframes spin-dragon {
+    0% {
+        transform: rotate(0deg);
+        scale: 100%;
+        border: 1px double #D9AE6A;
+    }
+
+    10% {
+        transform: rotate(5deg);
+        scale: 105%;
+        border: 2px double #D9AE6A;
+    }
+
+    20% {
+        transform: rotate(10deg);
+        scale: 110%;
+        border: 3px double #D9AE6A;
+    }
+
+    80% {
+        transform: rotate(350deg);
+        scale: 110%;
+        border: 3px double #D9AE6A;
+    }
+
+    90% {
+        transform: rotate(355deg);
+        scale: 105%;
+        border: 2px double #D9AE6A;
+    }
+
+    100% {
+        transform: rotate(359deg);
+        scale: 100%;
+        border: 1px double #D9AE6A;
+    }
+
+}
+
+.success-spin {
+    animation: spin-success 3s ease;
+}
+
+@keyframes spin-success {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.delayed-show {
+    animation: fadeIn 7s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    33% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
